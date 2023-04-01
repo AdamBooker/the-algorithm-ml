@@ -29,7 +29,7 @@ def roundrobin(*iterables):
       nexts = itertools.cycle(itertools.islice(nexts, num_active))
       logging.warning(f"Iterable exhausted, {num_active} iterables left.")
     except Exception as exc:
-      logging.warning(f"Iterable raised exception {exc}, ignoring.")
+      logging.warning(f"Iterable raised exception {exc}.")
       # continue
       raise
 
